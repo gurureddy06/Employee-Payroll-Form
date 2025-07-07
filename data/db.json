@@ -1,0 +1,26 @@
+{
+  "employees": [
+    {
+      "name": "guru reddy",
+      "gender": "Male",
+      "profile": "https://randomuser.me/api/portraits/men/1.jpg",
+      "departments": [
+        "Engineer"
+      ],
+      "salary": "50,00,000",
+      "startDate": "10 Jul 2025",
+      "id": "673b"
+    },
+    {
+      "id": "c49d",
+      "name": "vishnu",
+      "gender": "Male",
+      "profile": "https://randomuser.me/api/portraits/men/1.jpg",
+      "departments": [
+        "Finance"
+      ],
+      "salary": "20,00,000",
+      "startDate": "13 Aug 2013"
+    }
+  ]
+}

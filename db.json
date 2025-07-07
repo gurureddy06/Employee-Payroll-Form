@@ -1,0 +1,40 @@
+{
+  "employees": [
+    {
+      "name": "guru",
+      "gender": "Male",
+      "profile": "https://randomuser.me/api/portraits/men/1.jpg",
+      "departments": [
+        "Engineer"
+      ],
+      "salary": "20,00,000",
+      "startDate": "16 Oct 1999",
+      "note": "Good guy.",
+      "id": "7f40"
+    },
+    {
+      "name": "partiv ",
+      "gender": "Male",
+      "profile": "https://randomuser.me/api/portraits/men/2.jpg",
+      "departments": [
+        "Engineer"
+      ],
+      "salary": "50,00,000",
+      "startDate": "14 Sep 2025",
+      "note": "Intelligent guy.",
+      "id": "33b8"
+    },
+    {
+      "name": "Gaman",
+      "gender": "Male",
+      "profile": "https://randomuser.me/api/portraits/men/1.jpg",
+      "departments": [
+        "Engineer"
+      ],
+      "salary": "40,00,000",
+      "startDate": "16 Jun 2025",
+      "note": "Good Employee",
+      "id": "482a"
+    }
+  ]
+}

@@ -1,0 +1,290 @@
+/* Layout Properties for the whole page */
+body {
+  margin: 0;
+  padding: 0;
+  width: 1920px;
+  height: 1080px;
+  background: #F7F7F7;
+}
+.container {
+  padding: 30px 50px;
+}
+/* Header */
+.employee-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.employee-header img {
+  height: 50px;
+}
+
+.employee-header h1 {
+  font-size: 22px;
+  color: #333;
+  margin: 0;
+}
+
+.employee-header span {
+  color: #5A9216;
+}
+/* Shared UI styles */
+.input-ui {
+  font: normal normal normal 18px/24px Roboto;
+letter-spacing: 0px;
+color: #42515F;
+opacity: 1;
+}
+
+.input2-ui {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #BDBDBD;
+border-radius: 3px;
+opacity: 1;
+font: normal normal normal 18px/24px Roboto;
+color: #42515F;
+}
+
+/* Unique layout for each field */
+#name {
+  top: 265px;
+left: 546px;
+width: 48px;
+height: 24px;
+}
+
+#input-name{
+  top: 252px;
+  left: 688px;
+  width: 686px;
+  height: 50px;
+}
+
+#profile-image {
+  top: 348px;
+left: 546px;
+width: 105px;
+height: 24px;
+}
+.profile-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.profile-radio input[type="radio"] {
+  appearance: auto;
+  width: 16px;
+  height: 16px;
+}
+
+.profile-radio img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-radio input[type="radio"]:checked + img {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.6);
+}
+
+#Gender {
+  top: 445px;
+left: 546px;
+width: 58px;
+height: 24px;
+}
+
+#Department {
+  top: 515px;
+left: 546px;
+width: 95px;
+height: 24px;
+}
+
+#salary {
+ top: 585px;
+left: 688px;
+width: 341px;
+height: 50px;
+}
+
+#Start Date {
+ top: 589px;
+left: 546px;
+width: 49px;
+height: 24px;
+}
+
+#start-day,
+#start-month,
+#start-year {
+  top: 681px;
+left: 688px;
+width: 163px;
+height: 50px;
+}
+
+#notes {
+  top: 777px;
+left: 688px;
+width: 686px;
+height: 104px;
+resize: none;
+
+}
+
+/* Profile image styles */
+#profile-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-left: 5px;
+  vertical-align: middle;
+}
+
+/* Gender and Department layout */
+#gender-section label,
+#dept-section label {
+  margin-right: 20px;
+}
+
+.input-ui-radio,
+.input-ui-checkbox {
+  margin-right: 5px;
+}
+
+.form-container {
+  width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.form-container h2 {
+top: 175px;
+left: 548px;
+width: 290px;
+height: 37px;
+margin-left: 8px;
+/* UI Properties */
+text-align: left;
+font: normal normal bold 28px/37px Roboto;
+letter-spacing: 0px;
+color: #42515F;
+text-transform: capitalize;
+opacity: 1;
+}
+
+
+.form-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+
+.form-table td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.form-buttons {
+  text-align: center;
+  padding-left: 0px !important;
+}
+
+.form-buttons button {
+  background: #E2E2E2;
+  border: 1px solid #969696;
+  border-radius: 8px;
+  padding: 14px 40px;
+  font-size: 18px;
+  min-width: 160px;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effects */
+.form-buttons button:nth-child(1):hover {
+  background-color: #737373;
+  color: white;
+  border-color: #737373;
+}
+
+.form-buttons button:nth-child(2):hover {
+  background-color: #478c0f;
+  color: white;
+  border-color: #478c0f;
+}
+
+.form-buttons button:nth-child(3):hover {
+  background-color: #737373;
+  color: white;
+  border-color: #737373;
+}
+
+.form-buttons button:nth-child(2) {
+  margin-left: 200px; 
+  margin-right: 100;  
+}
+
+.cancelbtn{
+  margin-left: 0px !important;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px 10px 100px;
+}
+
+.add-user-btn {
+  padding: 10px 20px;
+  background-color: #82A70C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.add-user-btn:hover {
+  background-color: #6d910b;
+}
+
+.employee-details table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.employee-details th,
+.employee-details td {
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
+}
+
+.employee-details .dept-tag {
+  background-color: #e2f0cb;
+  color: #587d0b;
+  padding: 4px 8px;
+  margin: 2px;
+  border-radius: 4px;
+  display: inline-block;
+}

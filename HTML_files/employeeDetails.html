@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Details</title>
+  <link rel="stylesheet" href="../CSS_files/employeeDetails.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="employee-header">
+      <img src="../Assets/employee.png" alt="employee" />
+      <h1>EMPLOYEE<br><span>PAYROLL</span></h1>
+    </div>
+
+    <!-- Main Content Wrapper -->
+    <div class="employee-details">
+      <!-- Page Title and Add Button -->
+      <div class="page-header">
+        <h2>Employee Details</h2>
+        <div class="right-actions">
+          <input type="text" placeholder="Search..." class="search-box" />
+          <button class="add-user-btn" onclick="location.href='../HTML_files/payrollForm.html'">+ Add User</button>
+        </div>
+      </div>
+
+      <!-- Employee Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>PROFILE</th>
+            <th>NAME</th>
+            <th>GENDER</th>
+            <th>DEPARTMENT</th>
+            <th>SALARY</th>
+            <th>START DATE</th>
+            <th>ACTIONS</th>
+          </tr>
+        </thead>
+        <tbody id="employeeList">
+          <!-- Employee rows go here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="../Script_files/script.js"></script>
+</body>
+</html>
