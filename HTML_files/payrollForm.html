@@ -1,4 +1,4 @@
-<!DOCTYPE  html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,136 +7,132 @@
 </head>
 <body>
 
-<!-- Outer Container -->
-<div class="container">
-
-   <!-- Header -->
+  <!-- Header -->
   <div class="employee-header clickable" onclick="location.href='../HTML_files/employeeDetails.html'">
     <img src="../Assets/employee.png" alt="employee" />
-      <h1>EMPLOYEE<br><span>PAYROLL</span></h1>
-   </div>
-
-  <!-- Form Container -->
-  <div class="form-container">
-    <h2>Employee Payroll Form</h2>
-    <form id="employeeForm">
-      <table class="form-table">
-
-        <!-- Name -->
-        <tr>
-          <td><label for="name" class="input-ui">Name</label></td>
-          <td><input type="text" id="input-name" name="name" class="input2-ui" /></td>
-        </tr>
-
-        <!-- Profile Image -->
-        <tr>
-          <td><label class="input-ui">profile image</label></td>
-          <td id="profile-section">
-            <label class="profile-radio">
-              <input type="radio" name="profile" value="https://randomuser.me/api/portraits/women/1.jpg" />
-              <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Profile 1" />
-            </label>
-            <label class="profile-radio">
-              <input type="radio" name="profile" value="https://randomuser.me/api/portraits/men/1.jpg" />
-              <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile 2" />
-            </label>
-            <label class="profile-radio">
-              <input type="radio" name="profile" value="https://randomuser.me/api/portraits/men/2.jpg" />
-              <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Profile 3" />
-            </label>
-            <label class="profile-radio">
-              <input type="radio" name="profile" value="https://randomuser.me/api/portraits/women/2.jpg" />
-              <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Profile 4" />
-            </label>
-          </td>
-        </tr>
-
-        <!-- Gender -->
-        <tr>
-          <td><label for="Gender" class="input-ui">Gender</label></td>
-          <td id="gender-section">
-            <label class="input-ui"><input type="radio" name="gender" value="Male" class="input-ui-radio" /> Male</label>
-            <label class="input-ui"><input type="radio" name="gender" value="Female" class="input-ui-radio" /> Female</label>
-          </td>
-        </tr>
-
-        <!-- Department -->
-<tr>
-  <td><label for="Department" class="input-ui">Department</label></td>
-  <td id="dept-section">
-    <label class="input-ui"><input type="checkbox" name="department[]" value="HR" class="input-ui-checkbox" /> HR</label>
-    <label class="input-ui"><input type="checkbox" name="department[]" value="Sales" class="input-ui-checkbox" /> Sales</label>
-    <label class="input-ui"><input type="checkbox" name="department[]" value="Finance" class="input-ui-checkbox" /> Finance</label>
-    <label class="input-ui"><input type="checkbox" name="department[]" value="Engineer" class="input-ui-checkbox" /> Engineer</label>
-    <label class="input-ui"><input type="checkbox" name="department[]" value="Others" class="input-ui-checkbox" /> Others</label>
-  </td>
-</tr>
-
-
-        <!-- Salary -->
-        <tr>
-          <td><label for="salary" class="input-ui">Salary</label></td>
-          <td>
-            <select id="salary" name="salary" class="input2-ui">
-              <option>Select Salary</option>
-              <option>10,00,000</option>
-              <option>20,00,000</option>
-              <option>30,00,000</option>
-              <option>40,00,000</option>
-              <option>50,00,000</option>
-            </select>
-          </td>
-        </tr>
-
-        <!-- Start Date -->
-        <tr>
-          <td><label for="Start Date" class="input-ui">Start Date</label></td>
-          <td id="Start Date">
-            <select id="start-day" name="day" class="input2-ui">
-              <option>Day</option>
-              <script>
-                for(let i=1;i<=31;i++){
-                  document.write(`<option value="${i}">${i}</option>`);
-                }
-              </script>
-            </select>
-            <select id="start-month" name="month" class="input2-ui">
-              <option>Month</option>
-              <option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option>
-              <option>May</option><option>Jun</option><option>Jul</option><option>Aug</option>
-              <option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
-            </select>
-            <select id="start-year" name="year" class="input2-ui">
-              <option>Year</option>
-              <script>
-                for(let i=1985;i<=2100;i++){
-                  document.write(`<option value="${i}">${i}</option>`);
-                }
-              </script>
-            </select>
-          </td>
-        </tr>
-
-        <!-- Notes -->
-        <tr>
-          <td><label for="notes" class="input-ui">Notes</label></td>
-          <td><textarea id="notes" name="notes" class="input2-ui" rows="4" cols="40"></textarea></td>
-        </tr>
-
-        <!-- Buttons -->
-        <tr>
-          <td colspan="2" class="form-buttons">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
-          </td>
-        </tr>
-
-      </table>
-    </form>
+    <h1>EMPLOYEE<br><span>PAYROLL</span></h1>
   </div>
-</div>
-<script src="../Script_files/script.js"></script>
 
+  <!-- Centered Form Wrapper -->
+  <div class="form-wrapper">
+    <div class="form-container">
+      <h2>Employee Payroll Form</h2>
+      <form id="employeeForm">
+        <table class="form-table">
+          <!-- Name -->
+          <tr>
+            <td><label for="name" class="input-ui">Name</label></td>
+            <td><input type="text" id="input-name" name="name" class="input2-ui" /></td>
+          </tr>
+
+          <!-- Profile Image -->
+          <tr>
+            <td><label class="input-ui">Profile Image</label></td>
+            <td id="profile-section">
+              <label class="profile-radio">
+                <input type="radio" name="profile" value="https://randomuser.me/api/portraits/women/1.jpg" />
+                <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Profile 1" />
+              </label>
+              <label class="profile-radio">
+                <input type="radio" name="profile" value="https://randomuser.me/api/portraits/men/1.jpg" />
+                <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="Profile 2" />
+              </label>
+              <label class="profile-radio">
+                <input type="radio" name="profile" value="https://randomuser.me/api/portraits/men/2.jpg" />
+                <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Profile 3" />
+              </label>
+              <label class="profile-radio">
+                <input type="radio" name="profile" value="https://randomuser.me/api/portraits/women/2.jpg" />
+                <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="Profile 4" />
+              </label>
+            </td>
+          </tr>
+
+          <!-- Gender -->
+          <tr>
+            <td><label for="Gender" class="input-ui">Gender</label></td>
+            <td id="gender-section">
+              <label class="input-ui"><input type="radio" name="gender" value="Male" class="input-ui-radio" /> Male</label>
+              <label class="input-ui"><input type="radio" name="gender" value="Female" class="input-ui-radio" /> Female</label>
+            </td>
+          </tr>
+
+          <!-- Department -->
+          <tr>
+            <td><label for="Department" class="input-ui">Department</label></td>
+            <td id="dept-section">
+              <label class="input-ui"><input type="checkbox" name="department[]" value="HR" class="input-ui-checkbox" /> HR</label>
+              <label class="input-ui"><input type="checkbox" name="department[]" value="Sales" class="input-ui-checkbox" /> Sales</label>
+              <label class="input-ui"><input type="checkbox" name="department[]" value="Finance" class="input-ui-checkbox" /> Finance</label>
+              <label class="input-ui"><input type="checkbox" name="department[]" value="Engineer" class="input-ui-checkbox" /> Engineer</label>
+              <label class="input-ui"><input type="checkbox" name="department[]" value="Others" class="input-ui-checkbox" /> Others</label>
+            </td>
+          </tr>
+
+          <!-- Salary -->
+          <tr>
+            <td><label for="salary" class="input-ui">Salary</label></td>
+            <td>
+              <select id="salary" name="salary" class="input2-ui">
+                <option>Select Salary</option>
+                <option>10,00,000</option>
+                <option>20,00,000</option>
+                <option>30,00,000</option>
+                <option>40,00,000</option>
+                <option>50,00,000</option>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Start Date -->
+          <tr>
+            <td><label for="Start Date" class="input-ui">Start Date</label></td>
+            <td id="Start Date">
+              <select id="start-day" name="day" class="input2-ui">
+                <option>Day</option>
+                <script>
+                  for(let i=1;i<=31;i++){
+                    document.write(`<option value="${i}">${i}</option>`);
+                  }
+                </script>
+              </select>
+              <select id="start-month" name="month" class="input2-ui">
+                <option>Month</option>
+                <option>Jan</option><option>Feb</option><option>Mar</option><option>Apr</option>
+                <option>May</option><option>Jun</option><option>Jul</option><option>Aug</option>
+                <option>Sep</option><option>Oct</option><option>Nov</option><option>Dec</option>
+              </select>
+              <select id="start-year" name="year" class="input2-ui">
+                <option>Year</option>
+                <script>
+                  for(let i=1985;i<=2100;i++){
+                    document.write(`<option value="${i}">${i}</option>`);
+                  }
+                </script>
+              </select>
+            </td>
+          </tr>
+
+          <!-- Notes -->
+          <tr>
+            <td><label for="notes" class="input-ui">Notes</label></td>
+            <td><textarea id="notes" name="notes" class="input2-ui" rows="4" cols="40"></textarea></td>
+          </tr>
+
+          <!-- Buttons -->
+          <tr>
+            <td colspan="2" class="form-buttons">
+              <button type="button" class="cancelbtn">Cancel</button>
+              <button type="submit">Submit</button>
+              <button type="reset">Reset</button>
+            </td>
+          </tr>
+
+        </table>
+      </form>
+    </div>
+  </div>
+
+  <script src="../Script_files/script.js"></script>
 </body>
 </html>
