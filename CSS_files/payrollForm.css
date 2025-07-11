@@ -11,7 +11,7 @@ body {
   gap: 15px;
   padding: 40px 133px 0;
   cursor: pointer;
-  margin-left:50px;
+  margin-left: 50px;
 }
 
 .employee-header img {
@@ -22,6 +22,23 @@ body {
   font-size: 22px;
   color: #333;
   margin: 0;
+}
+
+.invalid {
+  border: 2px solid red !important;
+}
+
+.error-msg {
+  color: red;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+#gender-section.invalid,
+#dept-section.invalid {
+  border: 2px solid red;
+  border-radius: 4px;
+  padding: 4px;
 }
 
 .employee-header span {
@@ -73,6 +90,7 @@ body {
 }
 
 /* Profile Section */
+/* --- Profile Section --- */
 #profile-section {
   display: flex;
   gap: 30px;
@@ -81,30 +99,37 @@ body {
 
 .profile-radio {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  gap: 6px;
+  flex-direction: row;
+  gap: 8px;
   cursor: pointer;
-}
-
-.profile-radio input[type="radio"] {
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  border: 2px solid #ccc;
-  border-radius: 50%;
   position: relative;
 }
 
-.profile-radio input[type="radio"]:checked::before {
-  content: "";
+/* Round radio before profile image */
+.profile-radio input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* <-- Round */
+  background-color: #fff;
+  position: relative;
+}
+
+.profile-radio input[type="radio"]:checked {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.profile-radio input[type="radio"]:checked::after {
+  content: "✔";
   position: absolute;
-  top: 3px;
+  top: -3px;
   left: 3px;
-  width: 8px;
-  height: 8px;
-  background-color: #007bff;
-  border-radius: 50%;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .profile-radio img {
@@ -121,17 +146,43 @@ body {
   box-shadow: 0 0 6px rgba(0, 123, 255, 0.6);
 }
 
-/* Gender Section */
+/* --- Gender Section --- */
 #gender-section {
   display: flex;
   gap: 20px;
   align-items: center;
 }
 
-#gender-section label {
+.gender-radio {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.gender-radio input[type="radio"] {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ccc;
+  border-radius: 50%; /* <-- Round */
+  background-color: #fff;
+  position: relative;
+}
+
+.gender-radio input[type="radio"]:checked {
+  background-color: #2196f3;
+  border-color: #2196f3;
+}
+
+.gender-radio input[type="radio"]:checked::after {
+  content: "✔";
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  left: 3px;
+  top: -3px;
+  font-weight: bold;
 }
 
 /* Department Section */
@@ -251,4 +302,3 @@ textarea#notes {
     text-align: left;
   }
 }
-
