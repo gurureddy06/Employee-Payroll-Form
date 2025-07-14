@@ -45,7 +45,5 @@ A simple web application built with **HTML, CSS, and JavaScript** to manage empl
 
 ## 🔧 To Do / Improvements
 
-- [ ] Add search/filter functionality
-- [ ] Form validation for required fields
 - [ ] Responsive/mobile layout
 - [ ] Dark mode toggle
